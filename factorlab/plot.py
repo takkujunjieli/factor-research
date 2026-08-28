@@ -41,3 +41,32 @@ def ic_decay_svg(summary: pd.DataFrame, out_path: str, title: str):
     with open(out_path, "w") as f:
         f.write(svg)
     return out_path
+
+
+def bar_svg(series, out_path: str, title: str, ref: float = 0.5):
+    """横向条形图(排名用)。series: index=名称, 值=分数;ref 画参考线(如 AUC=0.5)。"""
+    items = list(series.items())
+    n = len(items)
+    W, rowh, pl, pr, pt, pb = 660, 22, 210, 56, 40, 16
+    H = pt + pb + n * rowh
+    vals = [v for _, v in items]
+    lo = min(vals + [ref])
+    hi = max(vals + [ref])
+    span = (hi - lo) or 1.0
+    x = lambda v: pl + (v - lo) / span * (W - pl - pr)
+    bars = ""
+    for i, (name, v) in enumerate(items):
+        yy = pt + i * rowh
+        col = "#2563eb" if v >= ref else "#9ca3af"
+        bars += f'<text x="{pl - 6}" y="{yy + rowh/2 + 3:.1f}" text-anchor="end" font-size="10" fill="#374151">{name}</text>'
+        bars += f'<rect x="{x(min(v, ref)):.1f}" y="{yy + 3:.1f}" width="{abs(x(v) - x(ref)):.1f}" height="{rowh - 6}" fill="{col}"><title>{name}: {v:.3f}</title></rect>'
+        bars += f'<text x="{x(v) + (4 if v >= ref else -4):.1f}" y="{yy + rowh/2 + 3:.1f}" text-anchor="{"start" if v >= ref else "end"}" font-size="9" fill="#6b7280">{v:.3f}</text>'
+    refline = f'<line x1="{x(ref):.1f}" y1="{pt}" x2="{x(ref):.1f}" y2="{pt + n*rowh}" stroke="#ef4444" stroke-width="1" stroke-dasharray="4 3"/><text x="{x(ref):.1f}" y="{pt - 4}" text-anchor="middle" font-size="9" fill="#ef4444">{ref:g}</text>'
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="sans-serif">
+<rect width="{W}" height="{H}" fill="white"/>
+<text x="{W/2}" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#111827">{title}</text>
+{refline}{bars}
+</svg>'''
+    with open(out_path, "w") as fh:
+        fh.write(svg)
+    return out_path

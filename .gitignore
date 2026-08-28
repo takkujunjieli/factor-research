@@ -3,6 +3,9 @@ data/*
 !data/.gitkeep
 out/*
 !out/.gitkeep
+# 根目录中间产物/输出(可由脚本从公开数据重生成)
+*.parquet
+*.csv
 .venv/
 venv/
 __pycache__/
