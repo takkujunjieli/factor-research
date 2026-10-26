@@ -1,5 +1,9 @@
 # factor-research(独立研究环境,不属于 dashboard)
 
+## Qlib 第一版
+
+新增日频选股与择时、5/20日预测、横截面及单票时间序列 IC / ICIR，以及不可变前向账本。组合由现有 Kelly / Risk Allocation 处理。运行、数据口径与备份说明见 [Qlib 使用文档](docs/qlib-v1.md)。使用独立 `.venv-qlib`，不改变既有宏观研究环境。
+
 放"重"的东西:全市场横截面 / panel / 宏观数据的研究、因子验证、调参。用**公开数据**,
 **不落 dashboard**。dashboard 保持 slim(只在 watchlist 上算选定因子)。
 

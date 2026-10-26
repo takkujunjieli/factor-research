@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "description": "可扩展的人工研究分类目录，非全市场行业成分数据库；股票可属于多个主题。",
+  "groups": [
+    {
+      "id": "semiconductors",
+      "kind": "industry",
+      "name": "半导体",
+      "symbols": [
+        "ACLS",
+        "ADI",
+        "ALAB",
+        "AMAT",
+        "AMD",
+        "AMKR",
+        "ARM",
+        "ASML",
+        "ASX",
+        "AVGO",
+        "CAMT",
+        "COHU",
+        "GFS",
+        "INTC",
+        "KLAC",
+        "LRCX",
+        "MCHP",
+        "MPWR",
+        "MRVL",
+        "MU",
+        "NVDA",
+        "NXPI",
+        "ON",
+        "ONTO",
+        "QCOM",
+        "SNDK",
+        "STM",
+        "STX",
+        "TER",
+        "TSM",
+        "TXN",
+        "UMC",
+        "WDC"
+      ]
+    },
+    {
+      "id": "optical",
+      "kind": "industry",
+      "name": "通信 · 光器件与光互连",
+      "symbols": [
+        "COHR",
+        "LITE",
+        "AAOI",
+        "GLW",
+        "CIEN",
+        "FN"
+      ]
+    },
+    {
+      "id": "networking",
+      "kind": "industry",
+      "name": "通信 · 网络设备",
+      "symbols": [
+        "ANET",
+        "CSCO",
+        "NOK",
+        "ERIC",
+        "UI"
+      ]
+    },
+    {
+      "id": "servers",
+      "kind": "industry",
+      "name": "硬件 · 服务器与存储系统",
+      "symbols": [
+        "DELL",
+        "HPE",
+        "SMCI",
+        "PSTG",
+        "NTAP"
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "kind": "industry",
+      "name": "软件 · 网络安全",
+      "symbols": [
+        "CRWD",
+        "PANW",
+        "ZS",
+        "FTNT",
+        "S",
+        "OKTA",
+        "CYBR"
+      ]
+    },
+    {
+      "id": "cloud-data",
+      "kind": "industry",
+      "name": "软件 · 云数据与可观测性",
+      "symbols": [
+        "SNOW",
+        "DDOG",
+        "MDB",
+        "NET",
+        "CFLT",
+        "ESTC"
+      ]
+    },
+    {
+      "id": "enterprise-software",
+      "kind": "industry",
+      "name": "软件 · 企业应用",
+      "symbols": [
+        "MSFT",
+        "ORCL",
+        "CRM",
+        "NOW",
+        "ADBE",
+        "INTU",
+        "WDAY",
+        "HUBS"
+      ]
+    },
+    {
+      "id": "cloud-compute",
+      "kind": "industry",
+      "name": "算力 · 云计算服务",
+      "symbols": [
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "ORCL",
+        "CRWV",
+        "NBIS"
+      ]
+    },
+    {
+      "id": "payments",
+      "kind": "industry",
+      "name": "金融科技 · 支付网络与处理",
+      "symbols": [
+        "V",
+        "MA",
+        "PYPL",
+        "XYZ",
+        "FI",
+        "FIS",
+        "GPN",
+        "FOUR"
+      ]
+    },
+    {
+      "id": "broker-exchange",
+      "kind": "industry",
+      "name": "金融 · 券商与交易所",
+      "symbols": [
+        "HOOD",
+        "IBKR",
+        "SCHW",
+        "CME",
+        "ICE",
+        "NDAQ",
+        "CBOE"
+      ]
+    },
+    {
+      "id": "banks",
+      "kind": "industry",
+      "name": "金融 · 大型银行",
+      "symbols": [
+        "JPM",
+        "BAC",
+        "WFC",
+        "C",
+        "GS",
+        "MS"
+      ]
+    },
+    {
+      "id": "asset-managers",
+      "kind": "industry",
+      "name": "金融 · 资产管理",
+      "symbols": [
+        "BLK",
+        "BX",
+        "KKR",
+        "APO",
+        "ARES",
+        "TROW"
+      ]
+    },
+    {
+      "id": "crypto-mining",
+      "kind": "industry",
+      "name": "数字资产 · 矿业与算力",
+      "symbols": [
+        "IREN",
+        "CIFR",
+        "CLSK",
+        "MARA",
+        "RIOT",
+        "HUT",
+        "WULF",
+        "BTDR"
+      ]
+    },
+    {
+      "id": "crypto-platforms",
+      "kind": "industry",
+      "name": "数字资产 · 平台与基础设施",
+      "symbols": [
+        "COIN",
+        "CRCL",
+        "GLXY",
+        "BMNR",
+        "BTBT"
+      ]
+    },
+    {
+      "id": "space",
+      "kind": "industry",
+      "name": "航天 · 发射与卫星",
+      "symbols": [
+        "RKLB",
+        "ASTS",
+        "RDW",
+        "LUNR",
+        "PL",
+        "SPIR",
+        "BKSY"
+      ]
+    },
+    {
+      "id": "defense",
+      "kind": "industry",
+      "name": "国防 · 航空航天与军工",
+      "symbols": [
+        "LMT",
+        "RTX",
+        "NOC",
+        "GD",
+        "HII",
+        "KTOS",
+        "AVAV"
+      ]
+    },
+    {
+      "id": "electrical-equipment",
+      "kind": "industry",
+      "name": "工业 · 配电与热管理",
+      "symbols": [
+        "ETN",
+        "VRT",
+        "HUBB",
+        "NVT",
+        "POWL",
+        "TT",
+        "JCI"
+      ]
+    },
+    {
+      "id": "power-generation",
+      "kind": "industry",
+      "name": "能源 · 发电与电力服务",
+      "symbols": [
+        "VST",
+        "CEG",
+        "NRG",
+        "NEE",
+        "SO",
+        "DUK",
+        "GEV"
+      ]
+    },
+    {
+      "id": "nuclear",
+      "kind": "industry",
+      "name": "能源 · 核能与铀",
+      "symbols": [
+        "CCJ",
+        "UEC",
+        "UUUU",
+        "LEU",
+        "BWXT",
+        "SMR",
+        "OKLO"
+      ]
+    },
+    {
+      "id": "oil-gas",
+      "kind": "industry",
+      "name": "能源 · 油气生产与服务",
+      "symbols": [
+        "XOM",
+        "CVX",
+        "COP",
+        "EOG",
+        "OXY",
+        "SLB",
+        "HAL",
+        "BKR"
+      ]
+    },
+    {
+      "id": "biopharma",
+      "kind": "industry",
+      "name": "医疗 · 创新药与生物制药",
+      "symbols": [
+        "LLY",
+        "ABBV",
+        "MRK",
+        "PFE",
+        "AMGN",
+        "GILD",
+        "REGN",
+        "VRTX",
+        "BIIB"
+      ]
+    },
+    {
+      "id": "medical-tools",
+      "kind": "industry",
+      "name": "医疗 · 器械与生命科学工具",
+      "symbols": [
+        "ISRG",
+        "ABT",
+        "MDT",
+        "TMO",
+        "DHR",
+        "SYK",
+        "BSX"
+      ]
+    },
+    {
+      "id": "retail",
+      "kind": "industry",
+      "name": "消费 · 综合零售与电商",
+      "symbols": [
+        "WMT",
+        "COST",
+        "TGT",
+        "AMZN",
+        "SHOP",
+        "MELI",
+        "BABA",
+        "JD"
+      ]
+    },
+    {
+      "id": "travel",
+      "kind": "industry",
+      "name": "消费 · 旅行与预订",
+      "symbols": [
+        "BKNG",
+        "ABNB",
+        "EXPE",
+        "MAR",
+        "HLT",
+        "UBER"
+      ]
+    },
+    {
+      "id": "datacenter-reit",
+      "kind": "industry",
+      "name": "地产 · 数据中心与通信设施",
+      "symbols": [
+        "EQIX",
+        "DLR",
+        "AMT",
+        "CCI",
+        "SBAC"
+      ]
+    },
+    {
+      "id": "ai-infrastructure",
+      "kind": "theme",
+      "name": "主题 · AI 基础设施",
+      "symbols": [
+        "NVDA",
+        "AVGO",
+        "ANET",
+        "COHR",
+        "LITE",
+        "AAOI",
+        "DELL",
+        "SMCI",
+        "VRT",
+        "ETN",
+        "GEV",
+        "CRWV",
+        "NBIS"
+      ]
+    },
+    {
+      "id": "cryptocurrency",
+      "kind": "theme",
+      "name": "主题 · 加密货币",
+      "symbols": [
+        "ASST",
+        "BMNR",
+        "BTBT",
+        "DFDV",
+        "MSTR",
+        "PURR",
+        "SBET",
+        "SMLR",
+        "UPXI"
+      ]
+    },
+    {
+      "id": "robotics",
+      "kind": "theme",
+      "name": "主题 · 机器人与自动化",
+      "symbols": [
+        "TSLA",
+        "SYM",
+        "TER",
+        "ROK",
+        "ISRG",
+        "SERV"
+      ]
+    },
+    {
+      "id": "smallcap-growth",
+      "kind": "theme",
+      "name": "主题 · 新兴成长研究名单",
+      "symbols": [
+        "PURR",
+        "RKLB",
+        "ASTS",
+        "AAOI",
+        "ALAB",
+        "IREN",
+        "LUNR",
+        "RDW",
+        "BE",
+        "U"
+      ]
+    }
+  ],
+  "group_aliases": {
+    "chip-design": "semiconductors",
+    "chip-memory": "semiconductors",
+    "chip-foundry": "semiconductors",
+    "chip-equipment": "semiconductors",
+    "chip-packaging": "semiconductors",
+    "chip-analog": "semiconductors",
+    "hype-treasury": "cryptocurrency",
+    "btc-treasury": "cryptocurrency",
+    "eth-treasury": "cryptocurrency",
+    "digital-asset-treasury": "cryptocurrency"
+  }
+}

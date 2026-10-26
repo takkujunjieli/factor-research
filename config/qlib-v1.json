@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "universe_id": "us-liquid-static-v1",
+  "universe_type": "static_current_survivors",
+  "benchmark": "SPY",
+  "symbols": ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "AVGO", "TSLA", "AMD", "ADBE", "CRM", "ORCL", "NOW", "INTU", "QCOM", "TXN", "AMAT", "LRCX", "KLAC", "MU", "INTC", "ADI", "PANW", "CRWD", "NET", "SNOW", "JPM", "BAC", "WFC", "GS", "MS", "C", "BLK", "SCHW", "V", "MA", "AXP", "COF", "HOOD", "COIN", "BRK.B", "UNH", "JNJ", "LLY", "ABBV", "MRK", "PFE", "TMO", "ABT", "DHR", "AMGN", "GILD", "ISRG", "MDT", "CVS", "XOM", "CVX", "COP", "EOG", "SLB", "OXY", "CAT", "DE", "HON", "GE", "RTX", "LMT", "BA", "UPS", "UNP", "ETN", "WM", "WMT", "COST", "HD", "LOW", "TGT", "NKE", "SBUX", "MCD", "BKNG", "UBER", "NFLX", "DIS", "KO", "PEP", "PG", "PM", "MO", "MDLZ", "CL", "NEE", "DUK", "SO", "AEP", "PLD", "AMT", "EQIX", "O", "LIN", "APD", "FCX", "NEM"],
+  "start": "2017-01-01",
+  "horizons": [5, 20],
+  "train_sessions": 504,
+  "min_train_sessions": 252,
+  "refit_sessions": 20,
+  "display_limit": 10,
+  "min_candidates": 20,
+  "min_price": 5,
+  "min_dollar_volume": 10000000,
+  "ridge_alpha": 10,
+  "min_oos_dates": 252,
+  "timing_window": 63,
+  "timing_min_observations": 20
+}

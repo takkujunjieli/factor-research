@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "active": "default",
+  "profiles": {
+    "default": {
+      "name": "我的研究股票池",
+      "include_base": true,
+      "groups": [
+        "ai-infrastructure",
+        "asset-managers",
+        "banks",
+        "biopharma",
+        "broker-exchange",
+        "cloud-compute",
+        "cloud-data",
+        "crypto-mining",
+        "crypto-platforms",
+        "cryptocurrency",
+        "cybersecurity",
+        "datacenter-reit",
+        "defense",
+        "electrical-equipment",
+        "enterprise-software",
+        "medical-tools",
+        "networking",
+        "nuclear",
+        "oil-gas",
+        "optical",
+        "payments",
+        "power-generation",
+        "retail",
+        "robotics",
+        "semiconductors",
+        "servers",
+        "smallcap-growth",
+        "space",
+        "travel"
+      ],
+      "include": [
+        "PURR"
+      ],
+      "exclude": [],
+      "filters": {
+        "min_price": 0,
+        "min_dollar_volume": 10000000,
+        "volume_window": 20,
+        "min_market_cap": 0,
+        "max_market_cap": null,
+        "min_history": 61
+      }
+    }
+  }
+}
